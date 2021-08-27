@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "0a77aa36-e813-4227-9229-e4be33afd8b6"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -20,9 +23,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "lodash"
-            ],
             "outputPath": "dist/demo-formativa",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -46,8 +46,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "1mb",
-                  "maximumError": "2mb"
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
